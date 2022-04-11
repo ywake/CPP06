@@ -90,11 +90,6 @@ void doubleToOther(double d)
   if (isCutWell)
     std::cout << std::fixed << std::setprecision(1);
 
-  if (static_cast<double>(std::numeric_limits<float>::min()) <= d &&
-      d <= static_cast<double>(std::numeric_limits<float>::max())) {
-    std::cout << "float: " << static_cast<float>(d) << "\n";
-  } else {
-    std::cout << "float: impossible\n";
-  }
-  std::cout << "double: " << d << std::endl;
+  std::cout << "float: " << static_cast<float>(d) << "f\n"
+            << "double: " << d << std::endl;
 }
