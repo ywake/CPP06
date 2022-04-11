@@ -9,8 +9,8 @@ uniq = $(if $1,$(firstword $1) $(call uniq,$(filter-out $(firstword $1),$1)))
 #############
 
 # TODO: fill in here
-NAME	:= a.out
-SRCS	:=
+NAME	:= convert
+SRCS	:= main.cpp utils.cpp
 TEST_CPP:=
 
 CXX		:= c++
@@ -87,7 +87,8 @@ leak: $(shell uname)_leak
 ##############
 
 test: all
-	./$(NAME)
+	bash test.sh $(NAME) > out
+	diff -y -W 80 expect out
 
 ##########
 # Colors #
