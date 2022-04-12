@@ -3,12 +3,6 @@
 
 #include <string>
 
-#define ASCII                                                                  \
-  (" !\"#$%&'()"                                                               \
-   "*+,-./"                                                                    \
-   "0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopq "      \
-   "rstuvwxyz{|}~")
-
 typedef enum types {
   TYPE_NONE,
   TYPE_CHAR,

@@ -28,7 +28,7 @@ void charToOther(char c)
 void numToChar(int num)
 {
   if (std::isprint(num)) {
-    std::cout << "char: '" << ASCII[num - ' '] << "'" << std::endl;
+    std::cout << "char: '" << char(num) << "'" << std::endl;
   } else {
     std::cout << "char: Non displayable" << std::endl;
   }
