@@ -80,8 +80,8 @@ void doubleToOther(double d)
     std::cout << "char: impossible\n";
   }
 
-  if (static_cast<float>(std::numeric_limits<int>::min()) <= d &&
-      d <= static_cast<float>(std::numeric_limits<int>::max())) {
+  if (static_cast<double>(std::numeric_limits<int>::min()) <= d &&
+      d <= static_cast<double>(std::numeric_limits<int>::max())) {
     std::cout << "int: " << static_cast<int>(d) << "\n";
   } else {
     std::cout << "int: impossible\n";
