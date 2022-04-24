@@ -86,7 +86,7 @@ leak: $(shell uname)_leak
 # Test rules #
 ##############
 
-test: all
+test: leak
 	./$(NAME)
 
 ##########
